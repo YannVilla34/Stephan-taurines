@@ -237,7 +237,11 @@ if (realisationItems.length > 0) {
     
     img.onload = function() {
       item.style.backgroundImage = `url('${img.src}')`;
-      console.log(`✅ Réalisation ${imageNumber} chargée: ${img.src}`);
+        const seoImg = document.createElement('img');
+  seoImg.src = img.src;
+  seoImg.alt = `Stephan Taurines piscine coque ${imageNumber} Montpellier`;
+  seoImg.style.cssText = 'position:absolute;opacity:0;width:1px;height:1px;border-radius:var(--radius);';
+  item.appendChild(seoImg);
     };
     
     img.onerror = function() {
@@ -401,4 +405,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
 
