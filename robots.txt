@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap soumis en GSC
+Sitemap: https://stephan-taurines.fr/sitemap.xml
+
+# Bloque admin/drafts si existants
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
